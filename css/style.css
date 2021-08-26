@@ -1,0 +1,630 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #191919;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #FFF1B5;
+	border-bottom: 6px solid #562880;
+	height: 100px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+h1 {
+	font-size: 40px;
+	color: #562880;
+	font-family: 'Bangers', cursive;
+}
+
+.logo {
+	height: 50px;
+	width: 50px;
+}
+
+
+
+.icono-menu {
+	width: 60px;
+}
+
+.icono-redes {
+	width: 50px;
+}
+
+.redes-sociales {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 30px 10px;
+	margin-top: 130px;
+}
+
+.menu {
+	display: none;
+}
+.menu-desplegable {
+	display: flex;
+	font-size: 30px;
+	text-align: center;
+	flex-direction: column;
+	z-index: 100;
+	position: absolute;
+	width: 100%;
+}
+
+.boton-menu {
+	border: none;
+	background: #fff;
+}
+
+.menu li {
+	padding: 20px;
+	border: 1px solid #E2DFC2;
+	background: #73568C;
+}
+
+.menu li a {
+	text-decoration: none;
+	color: #E2DFC2;
+}
+
+.presentacion {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	background: #E2DFC2;
+
+}
+
+.titulos {
+	font-size: 40px;
+	font-weight: 700;
+	text-align: center;
+	font-family: 'Fauna One', serif;
+	background: #E2DFC2;
+	margin: 10px;
+}
+
+.texto-presentacion {
+	font-size: 30px;
+	font-family: 'Josefin Slab', serif;
+}	
+
+.texto-presentacion::first-letter{
+	font-size: 60px;
+
+}
+
+.container-actividades {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.item-actividades {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+.item-actividades:hover {
+	box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.4);
+	transform: translateY(-3%);
+	cursor: pointer;
+}
+
+nav ul, header {
+	z-index: 200;
+}
+.titulo-imagenes {
+	font-family: 'Fauna One', serif;
+	font-size: 30px;
+}
+.texto-imagenes {
+	margin-top: 15px;
+	font-size: 30px;
+	font-family: 'Josefin Slab', serif;
+}
+.texto-imagenes a {
+	text-decoration: none;
+}
+
+.imagen-cirugia {
+	height: 60%;
+}
+
+.imagen-peluqueria {
+	width: 100%;
+}
+
+.imagen-vacunas {
+	display: none;
+}
+/*---FOOTER----*/
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	background: rgb(150, 116, 159);
+	height: 500px;
+}
+
+.footer-titulo {
+	display: flex;
+	font-size: 35px;
+	align-items: center;
+	background: #FFF1B5;
+	border: 6px solid #fff;
+	font-family: 'Bangers', cursive;
+	padding: 20px;
+}
+
+.footer-titulo p {
+	color: #684E80;
+}
+
+.logo-footer {
+	width: 50px;
+	height: 50px;
+}
+
+.logo-telefono {
+	width: 50px;
+	height: 50px;
+}
+
+.imagen-mediosdepago {
+	width: 100%;
+}
+
+.contacto-footer {
+	display: flex;
+}
+
+.contacto-footer p {
+	font-size: 30px;
+}
+
+/*consejos*/
+
+.imagenes-consejos {
+	display: none;
+}
+
+.container-consejos {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.items-consejos {
+	margin: 2px 10%;
+	font-size: 2em;
+	font-family: 'Josefin Slab', serif;
+}
+
+.titulos-consejos {
+	font-family: 'Fauna One', serif;
+	font-size: 1em;
+	margin: 30px 0;
+	background: #73568C;
+	color: #fff;
+	text-align: center;
+}
+
+.titulos-consejos a {
+	text-decoration: none;
+	font-size: 45px;
+}
+
+/*Contactos*/
+.direccion-consulta {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-size: 25px;
+	background: #E2DFC2;
+	margin: 30px 0;
+	padding-bottom: 10px;
+}
+
+.formulario-consultas {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+	border: 1px solid #73568C;
+	padding: 15px;
+
+}
+
+.formulario-consultas label {
+	font-size: 25px;
+	margin-top: 10px;
+}
+
+.formulario-consultas input {
+	font-size: 30px;
+}
+
+.asterisco {
+	color: rgb(250, 0, 0);
+}
+
+.enviar {
+	font-size: 10px;
+	margin-top: 10px;
+}
+
+.imagenes-captcha {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 40px;
+	padding-top: 10px;
+}
+
+.logorecaptcha {
+	width: 20%;
+}
+
+.imagen-gato {
+	width: 40%;
+	display: none;
+}
+
+.imagen-perro {
+	display: none;
+	width: 25%;
+}
+
+.imagen-leon {
+	width: 100%;
+	display: none;
+}
+
+.imagen-tortuga {
+	display: none;
+	width: 30%;
+}
+
+.btn-enviar, .btn-vercaptcha {
+	height: 80px;
+	width: 100px;
+	background: lightblue;
+	margin-top: 30px;
+	font-family: 'Goudy Bookletter 1911', serif;
+	font-size: 20px;
+}
+
+.textoconfirmacion {
+	font-size: 35px;
+}
+
+.sucursales-ubicacion , .container-ubicacion{
+	display: none;
+}
+/*SEECION PERSONAL*/
+
+.container-tablapersonal {
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+	margin-top: 100px;
+	margin-bottom: 200px;
+
+}
+.container-paginado{
+	display: block;
+
+}
+.icono-lapiz {
+	display: flex;
+	position: fixed;
+	width:50px;
+	top: 170px;
+	right: 10px;
+
+}
+.icono-lapiz:hover {
+	cursor: pointer;
+}
+
+.formulario-personal {
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
+	width: 460px;
+	height: 400px;
+	border: 2px solid #73568C;
+	margin-top: 20px;
+}
+.btn-cargar , .btn-filtrar , .btn-quitarfiltro, .btn-editar, .btn-borrar , .btn-cargar3 {
+
+	font-family: 'Goudy Bookletter 1911', serif;
+	background:lightblue;
+	margin-top:20px;
+	height: 50px;
+	font-size: 1em;
+	padding: 2px;
+}
+.btn-paginado  {
+	font-family: 'Goudy Bookletter 1911', serif;
+	background:lightblue;
+	border-radius: 50%;
+	font-size: 25px;
+	width: 40px;
+	height: 40px;
+}
+.numero-paginado{
+ 	border: 1px solid #73568C;
+ 	width: 30%;
+ 	font-size: 15px;
+}
+.botones-personales{
+	display: flex;
+	align-content: center;
+}
+table, tr, td {
+	border: 3px solid #73568C;
+	border-collapse: collapse;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+table {
+	height: 40px;
+	text-align: center;
+	width: 40%;
+	margin:100px;
+}
+/*js*/
+.fondo-tabla {
+	background: rgba(133, 10, 20, 0.3);
+	color: #fff;
+}
+.ocultar {
+	display: none;
+}
+.ocultar-tabla {
+	display: none;
+}
+
+@media only screen and (min-width:550px) {
+	h1 {
+		font-size: 60px;
+	}
+	.logo {
+		width: 60px;
+		height: 60px;
+	}
+	.icono-menu {
+		width: 90px;
+	}
+	.icono-redes {
+		width: 60px;
+	}
+	/*INICIO*/
+	.presentacion {
+		margin: 30px;
+
+	}
+	.container-actividades {
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: baseline;
+		flex-wrap: wrap;
+	}
+	.item-actividades {
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		padding: 20px;
+	}
+	/*FOOTER*/
+	footer {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		height: 250px;
+		padding: 30px;
+	}
+	.footer-titulo {
+		display: flex;
+		font-size: 25px;
+		align-items: center;
+		background: #FFF1B5;
+		border: 6px solid #fff;
+		font-family: 'Bangers', cursive;
+		padding: 5px;
+	}
+	.contacto-footer p {
+		font-size: 20px;
+	}
+	.logo-telefono {
+		width: 30px;
+		height: 30px;
+	}
+	.mediosdepago {
+		width: 25%;
+	}
+}
+
+@media only screen and (min-width:850px) {
+	.logo {
+		height: 70px;
+		width: 70px;
+	}
+	.icono-menu {
+		display: none;
+	}
+	.redes-sociales {
+		margin-top: 170px;
+	}
+	.menu {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		background: #73568C;
+		width: 100%;
+		position: fixed;
+		top: 100px;
+		left: 0;
+	}
+	.menu li {
+		list-style: none;
+		width: 280px;
+		text-align: center;
+		padding: 7px;
+		border: none;
+	}
+	.menu li a {
+		text-decoration: none;
+		font-size: 28px;
+		font-family: 'Roboto', sans-serif;
+		color: #D9CE9B;
+	}
+	.menu li a:hover {
+		color: #fff;
+	}
+	.menu li:hover {
+		background: rgba(0, 0, 0, 0.3);
+		cursor: pointer;
+	}
+	.presentacion {
+		margin-top: 20px 90px 20px 90px;
+	}
+	.container-general {
+		display: flex;
+	}
+	.container-actividades {
+		width: 70%;
+	}
+	.container-vacunas {
+		width: 30%;
+	}
+	.imagen-vacunas {
+		display: block;
+		width: 80%;
+	}
+	/*CONTACTOS*/
+	.sucursales-formulario {
+		display: flex;
+		flex-direction: column;
+		align-items: baseline;
+		margin:10px;
+	}
+	.formulario {
+		margin: 10px 50px;
+	}
+	.sucursales-ubicacion {
+		display: block;
+		margin-bottom: 100px;
+	}
+	.tabla-sucursales, tr, td {
+		border: 3px solid #73568C;
+		border-collapse: collapse;
+	}
+	td {
+		font-size: 25px;
+		padding: 10px;
+	}
+
+}
+
+@media only screen and (min-width:1020px) {
+	/*inicio*/
+	.presentacion {
+		margin: 190px 100px 30px 100px;
+	}
+	.texto-presentacion{
+		margin:30px;
+	}
+	.redes-sociales {
+		flex-direction: column;
+		justify-content: center;
+		position: fixed;
+		margin-top: 20px;
+	}
+	article {
+		margin: 30px;
+	}
+	.container-actividades {
+		padding: 60px;
+	}
+	/*footer*/
+	.footer-titulo {
+		font-size: 60px;
+		padding: 0;
+	}
+	.logo-footer {
+		width: 60px;
+		height: 60px;
+	}
+	.logo-telefono {
+		width: 40px;
+		height: 40px;
+	}
+	.contacto-footer p {
+		font-size: 35px;
+		margin-left: 10px;
+	}
+	/*consejos*/
+	.container-consejos {
+		margin: 180px 20px;
+	}
+	.items-consejos {
+		width: 50%;
+		margin: 30px 50px;
+	}
+	.imagenes-consejos {
+		display: block;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 30%;
+		margin-top: 180px;
+	}
+	.imagen-antiparasitario {
+		width: 80%;
+	}
+	/*contactos*/
+	.direccion-consulta {
+		margin-top: 200px;
+	}
+	.sucursales-formulario {
+		display: flex;
+		flex-direction: row;
+		margin:20px;
+	}
+	.formulario {
+		width: 35%;
+	}
+	.sucursales-ubicacion{
+		width: 50%;
+	}
+	.container-ubicacion {
+		display: flex;
+		flex-direction:column;
+		align-items: center;
+	}
+	/*seccion personal*/
+	.container-tablapersonal{
+		flex-direction: row;
+		justify-content: center;
+		margin:100px;
+		align-items: baseline;
+	
+	}
+
+}
